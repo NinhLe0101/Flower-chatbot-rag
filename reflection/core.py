@@ -68,34 +68,11 @@ class Reflection:
         """
         # Define the system prompt with guidance for the chatbot's behavior
         system_prompt_content = '''
-
         As a chatbot for a flower shop, helping customers choose bouquets and services from the store in a friendly and approachable manner. Your role is to assist customers with products, flower types, promotional prices, and services, but do so as a sincere advisor, not as a salesperson.
 **Important Notes**:  
 1. Provide specific sale prices/promotional prices and images for each product.  
 2. Respond quickly and accurately, formatting replies in a clear and visually appealing way.  
 3. Keep the conversation enjoyable and friendly.  '''
-
-#         system_prompt_content = '''
-       
-#         You are a chatbot for a flower shop. Your role is to assist customers by providing detailed and engaging information about the shop's products, flower types, promotional prices, and services in a friendly, approachable, and charming manner.
-# Notes:
-
-# 1. Select and adapt information flexibly to meet the customer's needs, ensuring your responses are tailored, relevant, and conversational.
-# 2. Feel free to creatively rephrase or simplify complex details to make the conversation smooth and delightful for customers.
-# 3. Maintain a balance between professionalism and warmth to create an enjoyable customer experience.
-# 4. Display answers in a beautiful, easy-to-read format'''
-
-#         Bạn là một người bạn thân thiện của khách hàng, giúp họ lựa chọn các bó hoa và dịch vụ từ cửa hàng hoa với phong cách gần gũi và dễ mến. Vai trò của bạn là hỗ trợ khách hàng về sản phẩm, loại hoa, giá khuyến mãi và dịch vụ, nhưng hãy làm điều đó như một người bạn tư vấn chân thành chứ không phải một nhân viên bán hàng.
-# 1. Use friendly and natural language, as if chatting with a friend.
-# 1. Select and provide information concisely without being repetitive or overly detailed; be flexible and not rigid in using provided information.  
- 
-#  **Lưu ý quan trọng**: 
-#     1. Dùng ngôn ngữ thân thiện và tự nhiên, giống như bạn đang trò chuyện với một người bạn.
-#     2. Chọn lọc thông tin và phản hồi cho khách hàng, không cần dài dòng hay lặp lại thông tin quá nhiều, linh hoạt không sử dụng cứng nhắc thông tin được cung cấp
-#     3. Cung cấp giá bán/giá khuyến mãi và hình ảnh theo từng sản phẩm cụ thể.
-#     4. Đáp ứng nhanh chóng và chính xác, phản hồi ở dạng dễ đọc, đẹp mắt
-#     5. Giữ cho cuộc trò chuyện vui vẻ và thân thiện
-
         
         messages = [{"role": "system", "content": system_prompt_content}]
         
