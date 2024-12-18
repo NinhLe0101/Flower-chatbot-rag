@@ -15,12 +15,9 @@ class OpenAIClient:
         while retries < max_retries:
             try:
                 response = openai.ChatCompletion.create(
-                    # model="gpt-3.5-turbo",
                     model = self.model,
-                    messages=messages,
-                    # max_tokens=2048,
-                    # messages=messages[-2:],  # Chỉ gửi 3 tin nhắn gần nhất để giảm tải
-                    # temperature=1
+                    # messages=messages,
+                    messages=messages[-3:]
                 )
                 return response
             except openai.error.APIConnectionError as e:
